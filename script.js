@@ -1,9 +1,9 @@
 const html = document.querySelector('html');
 const btnDarkMode = document.querySelector('#btn-dark-mode');
-const darkMode = localStorage.getItem("darkMode");
+const darkMode = localStorage.getItem("dark-mode");
 
 
-if (darkMode === "true") {
+if (darkMode === "darkMode") {
   html.classList.add('dark-mode');
   btnDarkMode.classList.remove('fa-moon');
   btnDarkMode.classList.add('fa-sun');
@@ -13,16 +13,16 @@ if (darkMode === "true") {
 }
 
 
-btnDarkMode.addEventListener('click', function(){
-    html.classList.toggle('dark-mode');
-  
-    if (html.classList.contains('dark-mode')) {
-      localStorage.setItem("darkMode", "true");
-      btnDarkMode.classList.remove('fa-moon');
-      btnDarkMode.classList.add('fa-sun');
-    } else {
-      localStorage.setItem("darkMode", "false");
-      btnDarkMode.classList.add('fa-moon');
-      btnDarkMode.classList.remove('fa-sun');
-    }
-  });
+btnDarkMode.addEventListener('click', function () {
+  html.classList.toggle('dark-mode');
+
+  if (html.classList.contains('dark-mode')) {
+    localStorage.setItem("dark-mode", "darkMode");
+    btnDarkMode.classList.remove('fa-moon');
+    btnDarkMode.classList.add('fa-sun');
+  } else {
+    localStorage.setItem("dark-mode", "lightMode");
+    btnDarkMode.classList.add('fa-moon');
+    btnDarkMode.classList.remove('fa-sun');
+  }
+});
