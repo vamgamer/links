@@ -68,6 +68,11 @@ li {
     display: flex;
     gap: 40px;
 }
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
 i {
     text-align: center;
     font-size: 44pt;
@@ -98,7 +103,7 @@ i:hover {
     text-align: center;
     cursor: pointer;
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 610px) {
     html,
     body{
         overflow-x: hidden;
@@ -125,11 +130,17 @@ i:hover {
         border-radius: 50%;
         object-position: 100% 45%;
     }
-    li{
-        justify-content: center;
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 35px;
+        margin: 10px auto;
     }
     i {
-        margin-left: 20px;
+        padding: 10px;
+        margin: 20px auto;
         font-size: 38pt;
     }
     h2{
@@ -167,8 +178,6 @@ i:hover {
         font-size: 20pt;
         display: flex;
         justify-content: center;
-        padding: 25px;
-        margin: 10px auto;
     }
     h2{
         font-size: 22pt;
@@ -204,7 +213,7 @@ i:hover {
         position: relative;
         object-position: 100% 45%;
     }
-    li{
+    ul{
         justify-content: center;
     }
 }
