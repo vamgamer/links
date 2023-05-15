@@ -167,6 +167,8 @@ i:hover {
         font-size: 20pt;
         display: flex;
         justify-content: center;
+        padding: 25px;
+        margin: 10px auto;
     }
     h2{
         font-size: 22pt;
